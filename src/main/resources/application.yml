@@ -1,0 +1,68 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: 
+ 
+  jpa:
+    show-sql: true
+    properties:
+      hibernate.dialect: org.hibernate.dialect.H2Dialect
+    hibernate.ddl-auto:  update
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-ui
+
+
+validation.messages:
+    errors:
+      10001:
+        field: firstName
+        message: First Name can't be null
+        code: 10001
+      10002:
+        field: lastName
+        message: Last name can't be null
+        code: 10002
+      20001:
+        field: title
+        message: Task title can't be null
+        code: 20001
+      30001:
+        field: taskId
+        message: TaskId can't be null
+        code: 30001
+      30002:
+        field: userId
+        message: UserId can't be null
+        code: 3000
+      30003:
+        field: startDate
+        message: Start Date can't be null
+        code: 30003
+      30004:
+        field: endDate
+        message: End Date can't be null
+        code: 30004
+      30005:
+        field: completedDate
+        message: Completed Date can't be future date.
+        code: 30005
+      100001:
+        field: consumerKey
+        message: X-CONSUMER-KEY can't be null or empty
+        code: 100001
+
+logging:
+  pattern:
+    level: "[Req-Uri: %X{OPERATION_NAME} | X-Trace-Id: %X{X-TRACE-ID} | Consumer: %X{X-CONSUMER-KEY}] %5p"
+  level:
+    root: ERROR
+    com.test.api: DEBUG
+
