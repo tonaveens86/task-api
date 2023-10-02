@@ -1,6 +1,7 @@
 # task-api
 
-<img width="1201" alt="image" src="https://github.com/tonaveens86/task-api/assets/146535218/d276fe00-6e84-45a1-a770-493ab9ab3882">
+![image](https://github.com/tonaveens86/task-api/assets/146535218/e99d8b34-17ff-4d5e-9503-2459cb5317bb)
+![image](https://github.com/tonaveens86/task-api/assets/146535218/fcd65f0a-a41e-4093-85e8-5e10739d54bf)
 
-<img width="1201" alt="image" src="https://github.com/tonaveens86/task-api/assets/146535218/60918f97-0fa4-4ef8-b791-8bfe341778c4">
+
 
