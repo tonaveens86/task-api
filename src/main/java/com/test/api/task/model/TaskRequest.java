@@ -10,7 +10,6 @@ import org.springframework.validation.ValidationUtils;
 
 import com.test.api.task.constants.StatusEnum;
 
-import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
